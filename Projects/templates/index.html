@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Prediction</title>
+</head>
+<body>
+    <h2>Risk Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender" required><br><br>
+
+        <label for="Has a car">Has a car:</label>
+        <input type="text" id="Has a car" name="Has a car" required><br><br>
+
+        <label for="Has a property">Has a property:</label>
+        <input type="text" id="Has a property" name="Has a property" required><br><br>
+
+        <label for="Children count">Children count:</label>
+        <input type="text" id="Children count" name="Children count" required><br><br>
+
+        <label for="Employment status">Employment status:</label>
+        <input type="text" id="Employment status" name="Employment status" required><br><br>
+
+        <label for="Education level">Education level:</label>
+        <input type="text" id="Education level" name="Education level" required><br><br>
+
+        <label for="Marital status">Marital status:</label>
+        <input type="text" id="Marital status" name="Marital status" required><br><br>
+
+        <label for="Dwelling">Dwelling:</label>
+        <input type="text" id="Dwelling" name="Dwelling" required><br><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" required><br><br>
+
+        <label for="Employment length">Employment length:</label>
+        <input type="text" id="Employment length" name="Employment length" required><br><br>
+
+        <label for="Has a mobile phone">Has a mobile phone:</label>
+        <input type="text" id="Has a mobile phone" name="Has a mobile phone" required><br><br>
+
+        <label for="Has a work phone">Has a work phone:</label>
+        <input type="text" id="Has a work phone" name="Has a work phone" required><br><br>
+
+        <label for="Has a phone">Has a phone:</label>
+        <input type="text" id="Has a phone" name="Has a phone" required><br><br>
+
+        <label for="Has an email">Has an email:</label>
+        <input type="text" id="Has an email" name="Has an email" required><br><br>
+
+        <label for="Job title">Job title:</label>
+        <input type="text" id="Job title" name="Job title" required><br><br>
+
+        <label for="Family member count">Income:</label>
+        <input type="text" id="Family member count" name="Family member count" required><br><br>
+
+        <label for="Account age">Income:</label>
+        <input type="text" id="Account age" name="Account age" required><br><br>
+
+        <label for="IncomePerChild">Income:</label>
+        <input type="text" id="IncomePerChild" name="IncomePerChild" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
